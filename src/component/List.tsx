@@ -1,17 +1,10 @@
 import React from "react";
 import addIklan from "./addIklan";
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 import { Layout, Modal, Button, Row, Col } from "antd";
 const { Header, Footer, Sider, Content } = Layout;
 
 const List = () => {
-  let history = useHistory();
-
-  function handleClick() {
-    history.push("/addIklan");
-  }
-
   return (
     <Layout style={{ height: "100vh" }}>
       <Header>
@@ -20,9 +13,11 @@ const List = () => {
             <p>Coba Header</p>
           </Col>
           <Col>
-            <Button type="primary" onClick={handleClick}>
+          <Link to="/addIklan">
+            <Button type="primary">
               + Add Iklan
             </Button>
+            </Link>
           </Col>
         </Row>
       </Header>

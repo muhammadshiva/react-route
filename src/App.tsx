@@ -13,9 +13,9 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={List} />
-        <Route path="/addIklan" component={addIklan} />
-        {/* <Redirect to="/" /> */}
+        <Route exact path="/" component={List} />
+        <Route exact path="/addIklan" component={addIklan} />
+        <Redirect to="/" />
       </Switch>
     </Router>
   );
