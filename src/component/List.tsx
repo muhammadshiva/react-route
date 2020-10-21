@@ -10,13 +10,11 @@ const List = () => {
       <Header>
         <Row justify="space-between">
           <Col>
-            <p>Coba Header</p>
+            <p style={{ color: "#fff", font: "inherit" }}>Seller Web</p>
           </Col>
           <Col>
-          <Link to="/addIklan">
-            <Button type="primary">
-              + Add Iklan
-            </Button>
+            <Link to="/addIklan">
+              <Button type="primary">+ Add Iklan</Button>
             </Link>
           </Col>
         </Row>
